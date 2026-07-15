@@ -193,7 +193,7 @@ ai-first-crm-hcp/
 ## 📧 Follow-up Panel
 
 <p align="center">
-  <img src="docs/screenshots/follow-up-panel.png" width="900">
+  <img src="docs/screenshots/follow-up-panel.png" width="500">
 </p>
 
 ---
