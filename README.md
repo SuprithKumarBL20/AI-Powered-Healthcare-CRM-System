@@ -13,15 +13,17 @@
 ---
 
 ## 👨‍⚕️ HCP Profile
-
+<center>
 ![HCP Profile](docs/screenshots/hcp-profile.png)
+</center>
 
 ---
 
 ## 📜 Interaction History
 
+<center>
 ![Interaction History](docs/screenshots/interaction-history.png)
-
+</center>
 ---
 
 ## ✏️ Edit Interaction
