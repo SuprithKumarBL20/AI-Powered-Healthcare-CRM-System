@@ -1,147 +1,179 @@
+<div align="center">
+
 # 🚀 AI-First CRM for Healthcare Professionals (HCP)
 
-An **AI-powered Customer Relationship Management (CRM)** platform built for pharmaceutical sales representatives to efficiently manage interactions with **Healthcare Professionals (HCPs)**.
+### AI-Powered CRM Platform for Pharmaceutical Sales Representatives
 
-The application leverages **FastAPI**, **React**, **LangGraph**, **LangChain**, and **Groq LLM** to automate interaction logging, AI-assisted conversations, compliance analysis, follow-up generation, and HCP profile management.
+Built using **React • FastAPI • LangGraph • LangChain • Groq LLM • MySQL**
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
+![LangGraph](https://img.shields.io/badge/LangGraph-Agent-orange)
+![LangChain](https://img.shields.io/badge/LangChain-LLM-green)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue?logo=mysql)
+
+</div>
 
 ---
 
-# 📸 Application Preview
+## 📖 Overview
 
-> Store all screenshots inside:
+AI-First CRM for Healthcare Professionals (HCP) is an intelligent Customer Relationship Management platform developed for pharmaceutical sales representatives to efficiently manage doctor interactions.
 
-```
-docs/screenshots/
-```
+The application combines **FastAPI**, **React**, **LangGraph**, **LangChain**, and **Groq LLM** to automate:
+
+- 🤖 AI-assisted interaction logging
+- 👨‍⚕️ Healthcare Professional profile management
+- ✅ Compliance analysis
+- 📧 AI-generated follow-ups
+- 📊 Interaction history management
+
+---
+
+# 📸 Application Screenshots
+
+<table>
+<tr>
+<td>
 
 ### Dashboard
 
-![Dashboard](docs/screenshots/dashboard.png)
+<img src="docs/screenshots/dashboard.png" width="100%">
+
+</td>
+
+<td>
 
 ### AI Chat Assistant
 
-![Chat](docs/screenshots/chat-interface.png)
+<img src="docs/screenshots/chat-interface.png" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td>
 
 ### HCP Profile
 
-![HCP Profile](docs/screenshots/hcp-profile.png)
+<img src="docs/screenshots/hcp-profile.png" width="100%">
+
+</td>
+
+<td>
 
 ### Interaction History
 
-![History](docs/screenshots/interaction-history.png)
+<img src="docs/screenshots/interaction-history.png" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td>
 
 ### Edit Interaction
 
-![Edit](docs/screenshots/edit-interaction.png)
+<img src="docs/screenshots/edit-interaction.png" width="100%">
+
+</td>
+
+<td>
 
 ### Follow-up Panel
 
-![Follow Up](docs/screenshots/follow-up-panel.png)
+<img src="docs/screenshots/follow-up-panel.png" width="100%">
+
+</td>
+</tr>
+</table>
 
 ---
 
 # ✨ Features
 
-## 🤖 AI CRM Assistant
+### 🤖 AI CRM Assistant
 
 - AI-powered conversational interface
 - Natural language interaction logging
 - Intelligent meeting detail extraction
-- LangGraph-based tool-calling workflow
-- Automatic form population
+- LangGraph-based tool execution
+- Automatic structured form generation
 
 ---
 
-## 👨‍⚕️ HCP Management
+### 👨‍⚕️ HCP Management
 
-- View Healthcare Professional profiles
-- Access previous interaction history
-- Maintain doctor information
-- Track communication preferences
-- View AI-generated next best action
-
----
-
-## 📋 Interaction Management
-
-- Log new interactions
-- Edit previous interactions
-- Track meeting summaries
-- Store discussion topics
-- Manage communication channels
+- Healthcare Professional profiles
+- Previous interaction history
+- Communication preferences
+- Doctor information management
+- AI-generated next best action
 
 ---
 
-## ✅ Compliance Analysis
+### 📋 Interaction Management
 
-- Real-time compliance verification
-- Detect risky conversations
-- Highlight policy violations
-- Review discussion topics
-- Generate compliance recommendations
+- Create interactions
+- Update interactions
+- Meeting summaries
+- Discussion tracking
+- Communication channels
 
 ---
 
-## 📧 Follow-up Generation
+### ✅ Compliance Analysis
+
+- Compliance verification
+- Risk detection
+- Conversation review
+- Policy recommendations
+- AI-generated compliance reports
+
+---
+
+### 📧 Follow-up Generation
 
 - AI-generated follow-up tasks
 - Personalized email drafts
 - Reminder scheduling
-- Next-step recommendations
+- Suggested next actions
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                     React Frontend
-                           │
-                     REST API Calls
-                           │
-                           ▼
-                    FastAPI Backend
-                           │
-          ┌────────────────┴────────────────┐
-          │                                 │
-          ▼                                 ▼
-    LangGraph Agent                 SQLAlchemy ORM
-          │                                 │
-          ▼                                 ▼
-   LangChain + Groq LLM                  MySQL
+                    React Frontend
+                          │
+                    REST API Calls
+                          │
+                          ▼
+                  FastAPI Backend
+                          │
+          ┌───────────────┴───────────────┐
+          │                               │
+          ▼                               ▼
+     LangGraph Agent              SQLAlchemy ORM
+          │                               │
+          ▼                               ▼
+    LangChain + Groq LLM              MySQL
           │
           ▼
-      AI Tool Execution
+     Tool Calling Workflow
 ```
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Technology Stack
 
-## Frontend
-
-- React
-- Vite
-- JavaScript
-- CSS
-- Axios
-
-### Backend
-
-- Python
-- FastAPI
-- SQLAlchemy
-- Pydantic
-
-### AI Framework
-
-- LangGraph
-- LangChain
-- Groq API
-- Tool Calling Agent
-
-### Database
-
-- MySQL
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | React, Vite, JavaScript, CSS, Axios |
+| Backend | FastAPI, Python, SQLAlchemy, Pydantic |
+| AI | LangGraph, LangChain, Groq LLM |
+| Database | MySQL |
 
 ---
 
@@ -161,7 +193,6 @@ ai-first-crm-hcp/
 │   │   ├── schemas.py
 │   │   ├── seed.py
 │   │   └── main.py
-│   │
 │   ├── requirements.txt
 │   └── .env
 │
@@ -172,12 +203,6 @@ ai-first-crm-hcp/
 │
 ├── docs/
 │   └── screenshots/
-│       ├── dashboard.png
-│       ├── chat-interface.png
-│       ├── hcp-profile.png
-│       ├── interaction-history.png
-│       ├── edit-interaction.png
-│       └── follow-up-panel.png
 │
 ├── .gitignore
 └── README.md
@@ -192,51 +217,49 @@ ai-first-crm-hcp/
 - Python 3.10+
 - Node.js 18+
 - MySQL
-- Groq API Key *(optional)*
+- Groq API Key (Optional)
+
+---
+
+## Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-first-crm-hcp.git
+
+cd ai-first-crm-hcp
+```
 
 ---
 
 # Backend Setup
 
-Navigate to the backend directory:
-
-```bash
-cd backend
-```
-
-### Create a Virtual Environment
+Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-### Activate the Virtual Environment
+Activate it
 
-**Windows**
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-**Linux/macOS**
+### Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
----
-
-### Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-### Configure Environment Variables
-
-Create a `.env` file inside the `backend` directory.
+Configure `.env`
 
 ```env
 GROQ_API_KEY=YOUR_GROQ_API_KEY
@@ -244,29 +267,25 @@ GROQ_API_KEY=YOUR_GROQ_API_KEY
 DATABASE_URL=mysql+pymysql://username:password@localhost:3306/crmdb
 ```
 
----
-
-### Seed the Database
+Seed the database
 
 ```bash
 python -m app.seed
 ```
 
----
-
-### Start the Backend Server
+Run backend
 
 ```bash
 uvicorn app.main:app --reload --port 8081
 ```
 
-Backend API
+Backend
 
 ```
 http://localhost:8081
 ```
 
-Swagger Documentation
+Swagger Docs
 
 ```
 http://localhost:8081/docs
@@ -276,19 +295,19 @@ http://localhost:8081/docs
 
 # Frontend Setup
 
-Navigate to the frontend folder.
+Navigate to frontend
 
 ```bash
 cd frontend
 ```
 
-Install dependencies.
+Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server.
+Run the development server
 
 ```bash
 npm run dev
@@ -305,65 +324,47 @@ http://localhost:5173
 # 🤖 AI Agent Workflow
 
 ```text
-User Request
-      │
-      ▼
+User Input
+     │
+     ▼
 LangGraph Agent
-      │
-      ▼
+     │
+     ▼
 Groq LLM
-      │
-      ▼
+     │
+     ▼
 Tool Selection
-      │
-      ├────────► Get HCP Profile
-      │
-      ├────────► Log Interaction
-      │
-      ├────────► Analyze Compliance
-      │
-      ├────────► Generate Follow-up
-      │
-      └────────► Edit Interaction
+     │
+     ├────────► Get HCP Profile
+     ├────────► Log Interaction
+     ├────────► Analyze Compliance
+     ├────────► Generate Follow-up
+     └────────► Edit Interaction
 ```
 
 ---
 
 # 🧰 AI Tools
 
-| Tool | Purpose |
-|------|---------|
-| **Get HCP Profile** | Retrieves doctor information and interaction history |
-| **Log Interaction** | Records meetings and discussion details |
-| **Analyze Compliance** | Checks interactions against compliance rules |
-| **Generate Follow-up** | Creates AI-powered follow-up tasks and email drafts |
-| **Edit Interaction** | Updates previously logged interactions |
-
----
-
-# 📦 API Endpoints
-
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | `/docs` | Swagger API Documentation |
-| POST | `/api/chat` | AI Chat Assistant |
-| GET | `/api/hcp` | Retrieve HCP Details |
-| POST | `/api/interactions` | Create New Interaction |
-| PUT | `/api/interactions/{id}` | Update Existing Interaction |
+| Tool | Description |
+|------|-------------|
+| Get HCP Profile | Retrieves doctor profile and history |
+| Log Interaction | Stores interaction details |
+| Analyze Compliance | Performs compliance analysis |
+| Generate Follow-up | Creates AI follow-up tasks and emails |
+| Edit Interaction | Updates previous interactions |
 
 ---
 
 # 🎯 Future Enhancements
 
-- 🎤 Voice-based interaction logging
-- 🔐 User authentication & authorization
-- 👥 Role-based access control
-- 📊 Analytics dashboard
-- 📄 PDF report generation
-- 📅 Calendar scheduling
-- 📧 Email integration
-- ☁️ Cloud deployment
-- 🤖 Multi-agent workflow
+- Voice Interaction
+- Multi-Agent Workflow
+- Role-Based Access Control
+- Email Integration
+- Calendar Integration
+- Analytics Dashboard
+- Cloud Deployment
 
 ---
 
@@ -373,12 +374,28 @@ Tool Selection
 
 Computer Science & Engineering
 
-**Skills:** AI • LangGraph • LangChain • FastAPI • React • Python • Full Stack Development
+**Skills**
 
-GitHub: **https://github.com/SuprithKumarBL20**
+- Python
+- FastAPI
+- React
+- LangGraph
+- LangChain
+- AI Agents
+- Full Stack Development
+
+GitHub
+
+https://github.com/SuprithKumarBL20
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ---
 
 # 📄 License
 
-This project is developed for educational, research, and demonstration purposes.
+This project is developed for educational and demonstration purposes.
