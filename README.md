@@ -169,7 +169,7 @@ ai-first-crm-hcp/
 ## 👨‍⚕️ HCP Profile
 
 <p align="center">
-  <img src="docs/screenshots/hcp-profile.png" width="900">
+  <img src="docs/screenshots/hcp-profile.png" width="400">
 </p>
 
 ---
@@ -177,7 +177,7 @@ ai-first-crm-hcp/
 ## 📜 Interaction History
 
 <p align="center">
-  <img src="docs/screenshots/interaction-history.png" width="900">
+  <img src="docs/screenshots/interaction-history.png" width="400">
 </p>
 
 ---
